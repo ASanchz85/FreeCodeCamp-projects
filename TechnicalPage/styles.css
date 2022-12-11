@@ -1,0 +1,115 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  body {
+    position: relative;
+  }
+  
+  #main-doc {
+    position: absolute;
+    width: 70vh;
+    max-width: 70%;
+    left: 30%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 20px;
+    margin-left: 30px;
+  }
+  
+  .main-section {
+    width: 90%;
+  }
+  
+  #navbar {
+    position: absolute;
+    width: 30vh;
+    display: block;
+    padding: 20px;
+    max-width: 200px;
+    top: 0;
+    left: 0;
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+    text-align: center;
+    background-color: darkgrey;
+    border-radius: 10px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    border-bottom: 2px solid black;
+    padding-left: 10px;
+  }
+  
+  a:hover {
+    border-right:  6px solid black;
+    font-weight: bold;
+  }
+  
+  a:active {
+    border-right:  6px solid black;
+    font-weight: bold;
+  }
+  
+  p, li {
+    line-height: 1.5rem;
+  }
+  
+  li {
+    margin-left: 40px;
+  }
+  
+  code {
+    display: block;
+    background-color: lightgrey;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
+  @media (max-width: 600px) {
+    #navbar {
+      width: 100vh;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      font-size: 75%;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+      max-width: 80%;
+    }
+  
+    h1 {
+      display: block;
+      position: absolute;
+      width: 100%;
+      padding: 20px;
+      text-align: center;
+    }
+  
+    a {
+      margin: 0;
+      padding: 0 10px;
+      display: flex;
+      align-self: center;
+      justify-content: center;
+    }
+  
+    #main-doc {
+      top: 10%;
+      width: 100vh;
+      left: 0;
+    }
+  
+    .main-section {
+      width: 100%;
+    }
+  }

@@ -1,0 +1,49 @@
+<!DODCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">Survey of Satisfaction</h1>
+    <hr>
+    <p id="description">Please, let us know your feedback about our services</p>
+    <hr>
+    <form id="survey-form">
+
+        <label id="name-label">Name <input id="name" type="text" placeholder="Your name here" required /></label>
+        <label id="email-label">Email <input id="email" type="email" placeholder="Your email here" required /></label>
+        <hr>
+        <label id="number-label">Rate our overall service from 1-100 <input id="number" type="number" min="1" max="100" placeholder="Your rate here" required /></label>
+      <hr>
+      <label id="kam">Who is your account manager? 
+      <select id="dropdown">
+        <option value="">(Choose your KAM)</option>
+        <option value="1">Michael</option>
+        <option value="2">Esther</option>
+      </select></label>
+      <hr>
+      <fieldset>
+        <legend>What are the services that you would include in next updates?</legend>
+        <label class="checkbox"><input type="checkbox" value="1" /> Webinar</label>
+        <label class="checkbox"><input type="checkbox" value="2" /> Free training</label>
+        <label class="checkbox"><input type="checkbox" value="3" /> Meetups</label>
+        <label class="checkbox"><input type="checkbox" value="4" /> Others</label>
+      </fieldset>
+      <fieldset>
+        <legend>Do you feel you are an important customer for us?</legend>
+        <label class="radio">Yes <input name="feeling" type="radio" value="yes" /></label>
+        <label class="radio">No <input name="feeling" type="radio" value="no" /></label>
+      </fieldset>
+      <fieldset>
+        <legend>Would you recommend us to a friend?</legend>
+        <label class="radio">Yes <input name="referral" type="radio" value="yes" /></label>
+        <label class="radio">No <input name="referral" type="radio" value="no" /></label>
+      </fieldset>
+      <textarea rows="5" cols="40" placeholder="Please, drop us some lines with your thoughts..."></textarea>
+      <input id="submit" type="Submit" value="Submit" />
+    </form>
+  </body>
+</html>
